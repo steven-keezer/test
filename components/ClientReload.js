@@ -8,6 +8,7 @@ import Router from 'next/router'
  */
 export const ClientReload = () => {
   // Exclude socket.io from prod bundle
+  // test
   useEffect(() => {
     import('socket.io-client').then((module) => {
       const socket = module.io()
